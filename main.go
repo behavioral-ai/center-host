@@ -3,10 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/behavioral-ai/core/messaging"
 	"log"
 	"net/http"
-	"github.com/behavioral-ai/core/messaging"
-	"github.com/behavioral-ai/core/messaging"
 	"os"
 	"os/signal"
 	"runtime"
@@ -124,6 +123,3 @@ func writeHealthResponse(w http.ResponseWriter, status *messaging.Status) {
 		w.WriteHeader(http.StatusBadRequest)
 	}
 }
-
-
-*/
